@@ -30,6 +30,7 @@ public class BeanMain {
         }
         System.out.println(System.currentTimeMillis() - time);
 
-        System.out.println(mBean.name);
+        System.out.println(mBean.toString());
+        System.out.println(mBean2.toString());
     }
 }
