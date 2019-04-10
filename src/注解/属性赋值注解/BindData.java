@@ -1,4 +1,4 @@
-package 注解.占位;
+package 注解.属性赋值注解;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

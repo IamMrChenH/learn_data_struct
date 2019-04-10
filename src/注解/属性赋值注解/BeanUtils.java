@@ -1,18 +1,11 @@
-package 注解.占位;
+package 注解.属性赋值注解;
 
 import java.lang.reflect.Field;
 
-public class BeanMain {
-    @BindData(id = 100, name = "taotao")
-    public static Bean mBean;
-
-    @BindData(id = 9999, name = "gayBing")
-    public static Bean mBean2;
-
-    public static void main(String[] a) {
-
+public class BeanUtils {
+    public static void init(Class<?> mTClass) {
         long time = System.currentTimeMillis();
-        Field[] fields = BeanMain.class.getDeclaredFields();
+        Field[] fields = mTClass.getDeclaredFields();
         for (Field f : fields) {
             if (f.isAnnotationPresent(BindData.class)) {
                 BindData annotation = f.getAnnotation(BindData.class);
@@ -29,8 +22,5 @@ public class BeanMain {
             }
         }
         System.out.println(System.currentTimeMillis() - time);
-
-        System.out.println(mBean.toString());
-        System.out.println(mBean2.toString());
     }
 }
