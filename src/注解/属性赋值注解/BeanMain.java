@@ -9,7 +9,7 @@ public class BeanMain {
 
     public static void main(String[] a) {
         BeanUtils.init(BeanMain.class);
-
+        System.out.println(mBean.getClass().getTypeName());
         System.out.println(mBean.toString());
         System.out.println(mBean2.toString());
     }

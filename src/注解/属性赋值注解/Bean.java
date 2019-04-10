@@ -1,6 +1,8 @@
 package 注解.属性赋值注解;
 
-public class Bean {
+import java.lang.reflect.Type;
+
+public class Bean implements Type {
     public int id;
     public String name;
 
@@ -10,5 +12,10 @@ public class Bean {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    @Override
+    public String getTypeName() {
+        return getClass().getTypeName();
     }
 }
