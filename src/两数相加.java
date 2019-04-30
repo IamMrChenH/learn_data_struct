@@ -1,7 +1,5 @@
 import 实体类.ListNode;
 
-import java.util.ArrayList;
-
 public class 两数相加 {
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
@@ -37,5 +35,6 @@ public class 两数相加 {
 
 
     }
+
 
 }
