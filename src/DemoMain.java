@@ -22,8 +22,6 @@ public class DemoMain {
                 sum++;
                 System.out.println(A+"+"+B + " = " + C );
             }
-
-
             return;
         }
 
