@@ -1,3 +1,5 @@
+package 树;
+
 import 实体类.Node;
 
 public class N叉树的最大深度 {
